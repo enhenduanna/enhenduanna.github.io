@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 头部标题 */
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 10px;
+}
+
+#content-wrap {
+  padding-bottom: 2rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2rem;            /* Footer height */
+}
+
+.header {
+  text-align: center;
+  background: white;
+  text-align: left;
+}
+
+.header h1 {
+  font-size: 20px;
+  float:left;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-position: center center;
+    background-repeat: repeat-x;
+    background-size: 100% auto;
+    width: 100%;
+}
+
+img[src*='logo']{
+    width: auto;
+    height: 50px;
+    overflow: hidden !important;
+}
+
+.menu{
+  position:right;
+  display: inline;
+  padding: 10px;
+  margin: 0;
+  pading: 0;
+  text-transform: uppercase;
+}
+
+.menu ul{
+  margin: 0;
+  pading: 0;
+  float:right;
+  list-style-type: none;
+  background: #ffffff;
+  height: 30px;
+  line-height: 30px;
+
+}
+
+.menu ul li{
+  margin: 0;
+  padding: 0;
+  float: left;
+  text-align:center;
+  position: relative;
+}
+
+.menu ul li a{
+  margin: 0;
+  padding: 0 10px;
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.menu ul li:hover .button{
+    color:#589DB3;
+}
+
+.menu ul li:hover ul{
+    display:block;
+}
+
+.menu ul li ul a:hover {color: #589DB3}
+
+.menu ul li:hover ul{
+    display:block;
+}
+.menu ul li ul{
+  position: absolute;
+  left: 0;
+  top: 25px;
+  display: none;
+  padding: 0;
+}
+
+.menu ul li ul li{
+  padding: 6px 0;
+  background: #ffffff;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  z-index: 2;
+}
+
+/* 左右两侧宽度 */
+.column-right {
+  float:left;
+  padding: 10px;
+  width: 25%;
+  position: absolute;
+  overflow: hidden;
+}
+
+/* 中间区域宽度 */
+.column-left {
+  float: right;
+  padding: 10px;
+  width: 75%;
+  z-index:1;
+}
+
+.column-left .box {
+        column-width: 200px; // 宽度200px
+        column-gap: 2px; // 列之间间隔2px
+    }
+img {
+       width: 100%;
+       margin: 2px
+   }
+
+/* 列后面清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* 响应式布局 - 宽度小于600px时设置上下布局 */
+@media screen and (max-width: 600px) {
+  .column-left, .column-right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .column-left, .column-right {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+  .menu a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.contact {
+    float: right;
+    margin: 5px;
+}
